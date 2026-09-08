@@ -60,6 +60,11 @@ final class UIFrameworkPolicyTests: XCTestCase {
         for pair in zip(points, points.dropFirst()) {
             XCTAssertLessThanOrEqual(pair.0.flips, pair.1.flips)
         }
+        // The 20-step sweep the article's figure is drawn from, pinned point by point.
+        // At ×0.30 Checkout sits at exactly the 0.5 tie margin and must not flip.
+        let fine = FlipReport.sweep(catalogue: Fixture.catalogue, steps: 20)
+        XCTAssertEqual(fine.map(\.flips),
+                       [0, 0, 0, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 5])
     }
 
     func testVerifiabilityBoostAloneFlipsNothing() {
