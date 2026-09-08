@@ -5,7 +5,7 @@ something a team can review in a pull request and hand to a coding agent. The id
 the frameworks did not change much in 2026, the **author** did. SwiftUI's premium was
 ergonomics; an agent author pays a fraction of that, and values verifiability more.
 
-Article: (added after publish)
+Article: [SwiftUI's Premium Was Ergonomics. My Agent Doesn't Pay It — So Five of Twelve Screens Flipped to UIKit.](https://medium.com/@er.rajatlakhina/swiftuis-premium-was-ergonomics-8c2e5f21f0fb) (Medium)
 
 ![Twelve screens, two authors, one policy: five screens flip from SwiftUI to UIKit when the author profile changes from human to agent](Article/2026-09-08-agent-author-ui-framework-flips.png)
 
@@ -35,7 +35,8 @@ Article: (added after publish)
 | Agent author | 4 | 8 |
 
 5 of 12 screens flip, all SwiftUI → UIKit: Product Detail, Checkout, Search Results, Profile,
-Legacy Order History. Paywall and Watch Companion survive on `reach`.
+Legacy Order History. Paywall survives on `reach`; Watch Companion, Settings and Onboarding survive
+because they carry no UIKit signal at all.
 
 Sweep (verifiability held at ×1.5): 0 flips at ergonomics ×1.0–0.9; 1 at ×0.85 (Legacy Order
 History); 3 at ×0.60 (+ Product Detail, Search Results); 5 at ×0.25 (+ Checkout, Profile).
